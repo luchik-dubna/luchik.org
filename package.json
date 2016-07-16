@@ -1,0 +1,25 @@
+{
+  "name": "luchik.org",
+  "version": "1.0.0",
+  "description": "Site for Luchik Dubna",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchik-dubna/luchik.org.git"
+  },
+  "author": "kizu (kizmarh@ya.ru)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luchik-dubna/luchik.org/issues"
+  },
+  "homepage": "https://github.com/luchik-dubna/luchik.org#readme",
+
+  "scripts": {
+    "watch": "./node_modules/.bin/jade --watch -P index.jade & ./node_modules/.bin/stylus --watch -r -m --include-css --sourcemap-inline style.styl && fg"
+  },
+  "devDependencies": {
+    "jade": "1.11.0",
+    "bemto.jade": "1.0.3",
+    "stylus": "0.54.5",
+    "stylobuild": "0.7.0"
+  }
+}

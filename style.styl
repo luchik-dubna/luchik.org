@@ -1,0 +1,148 @@
+$node_modules_src = 'node_modules'
+
+use($node_modules_src + '/stylobuild', {
+  minifier: 'csswring'
+})
+
+$size = {}
+$color = {}
+
+$size['base'] = 18px
+
+$color['text'] = #0D0D0C
+$color['body'] = #F5F4EB
+$color['menu-bg'] = rgba(#000, 0.32)
+$color['menu-text'] = #FFF
+
+
+.Page
+  padding: 0
+  margin: 0
+
+  // FIXME: Turn on when there'd be an actual scroll
+  // overflow-y: scroll
+
+  -webkit-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%
+
+  text-rendering: optimizelegibility
+  -webkit-font-smoothing: subpixel-antialiased
+
+  cursor: default
+
+  font-family: Helvetica Neue, Arial, sans-serif
+
+  font-size: $size.base
+  color: $color.text
+  background: $color.body
+
+  background-image: url('tuchka.jpg')
+  background-position: 50%
+  background-size: cover
+
+  &.is-dark
+    background-color: invert($color.body)
+    color: invert($color.text)
+
+  &-Body
+    padding: 0
+    margin: 0
+
+  &-Header
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: baseline
+
+    min-height: 100vh
+    padding: 4em
+    box-sizing: border-box
+
+  &-Title
+    padding: 0
+    margin: 0
+
+    font-size: 100px
+    font-weight: 100
+    letter-spacing: 4px
+
+  &-Subtitle
+    padding: 1em 0
+    margin: 0
+
+    font-size: 34px
+    font-weight: 100
+    letter-spacing: 1px
+
+  &-Contacts
+    padding: 0
+    margin: 0
+
+  &-Contact
+    display: block
+
+.Link
+  color: inherit
+  text-decoration: none
+
+  font-size: 33px
+  font-weight: 100
+  letter-spacing: 1px
+
+  &_vk
+    font-size: 50px
+    font-weight: 100
+    letter-spacing: 1px
+
+    // &:before
+    //   content: ""
+
+    //   display: inline-block
+
+    //   vertical-align: middle
+
+    //   width: 16px
+    //   height: 16px
+    //   margin-top: -0.1em
+    //   margin-right: 0.2em
+    //   margin-left: calc(-16px - 0.2em)
+
+    //   background: url("http://favicon.yandex.net/favicon/vk.com")
+
+
+// .Section
+//   min-height: 100vh
+
+//   &-Header
+//     padding-top: 1em
+//     margin: 0
+
+// .Menu
+//   position: fixed
+//   top: 0
+//   left: 0
+//   right: 0
+//   z-index: 1000
+
+//   &-Content
+//     display: flex
+
+//     width: 100%
+//     padding: 0
+//     margin: 0
+
+//     background: $color.menu-bg
+
+//   &-Item
+//     display: block
+//     padding: 0
+//     margin: 0
+
+//   &-Link
+//     display: block
+
+//     padding: 0 0.5em
+
+//     text-decoration: none
+
+//     color: $color.menu-text

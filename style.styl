@@ -14,6 +14,9 @@ $color['body'] = #F5F4EB
 $color['menu-bg'] = rgba(#000, 0.32)
 $color['menu-text'] = #FFF
 
+.is-vhidden
+  visibility: hidden !important
+
 
 .Page
   padding: 0
@@ -49,10 +52,12 @@ $color['menu-text'] = #FFF
     margin: 0
 
   &-Header
-    display: flex
+    display: inline-flex
     flex-direction: column
     justify-content: center
     align-items: baseline
+
+    vertical-align: top
 
     min-height: 100vh
     padding: 4em

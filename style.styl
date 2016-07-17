@@ -42,6 +42,9 @@ $color['menu-text'] = #FFF
   background-position: 50%
   background-size: cover
 
+  @media all and (orientation: portrait)
+    text-align: center
+
   &.is-dark
     background-color: invert($color.body)
     color: invert($color.text)
@@ -60,7 +63,8 @@ $color['menu-text'] = #FFF
     text-align: center
 
     min-height: 100vh
-    padding: 4em
+    padding: 3em
+    padding: 3em 5vw
     box-sizing: border-box
 
   &-Title

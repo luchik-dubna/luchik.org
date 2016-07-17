@@ -14,6 +14,7 @@
   "homepage": "https://github.com/luchik-dubna/luchik.org#readme",
 
   "scripts": {
+    "build": "./node_modules/.bin/jade index.jade && ./node_modules/.bin/stylus -r --include-css style.styl",
     "watch": "./node_modules/.bin/jade --watch -P index.jade & ./node_modules/.bin/stylus --watch -r -m --include-css --sourcemap-inline style.styl && fg"
   },
   "devDependencies": {

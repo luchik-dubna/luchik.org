@@ -17,7 +17,6 @@ $color['menu-text'] = #FFF
 .is-vhidden
   visibility: hidden !important
 
-
 .Page
   padding: 0
   margin: 0
@@ -33,7 +32,7 @@ $color['menu-text'] = #FFF
 
   cursor: default
 
-  font-family: Helvetica Neue, Arial, sans-serif
+  font-family: Helvetica Neue, Segoe UI, Calibri, Arial, sans-serif
 
   font-size: $size.base
   color: $color.text
@@ -58,6 +57,7 @@ $color['menu-text'] = #FFF
     align-items: baseline
 
     vertical-align: top
+    text-align: center
 
     min-height: 100vh
     padding: 4em
@@ -98,6 +98,9 @@ $color['menu-text'] = #FFF
   font-size: 33px
   font-weight: 100
   letter-spacing: 1px
+
+  &[href^='tel:']
+    font-family: Helvetica Neue, Calibri, Arial, sans-serif
 
   &_vk
     display: inline-block

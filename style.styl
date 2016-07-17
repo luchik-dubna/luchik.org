@@ -95,24 +95,34 @@ $color['menu-text'] = #FFF
   letter-spacing: 1px
 
   &_vk
-    font-size: 50px
+    display: inline-block
+
+    font-size: 42px
+    line-height: 0.85
     font-weight: 100
     letter-spacing: 1px
 
-    // &:before
-    //   content: ""
+    border-bottom: 2px solid
 
-    //   display: inline-block
+    &:not(:hover)
+      border-color: rgba(#000, 0.65)
 
-    //   vertical-align: middle
+      .is-dark &
+        border-color: rgba(#FFF, 0.65)
 
-    //   width: 16px
-    //   height: 16px
-    //   margin-top: -0.1em
-    //   margin-right: 0.2em
-    //   margin-left: calc(-16px - 0.2em)
+    &:before
+      content: ""
 
-    //   background: url("http://favicon.yandex.net/favicon/vk.com")
+      display: inline-block
+
+      vertical-align: middle
+
+      width: 32px
+      height: 32px
+      margin-top: -0.2em
+      margin-right: 0.2em
+
+      background: url("vk.svg")
 
 
 // .Section
